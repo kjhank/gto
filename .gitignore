@@ -1,0 +1,14 @@
+*.mp4
+*.webm
+*.zip
+*.rar
+*.json
+*.old
+*.bak
+
+medialibrary/
+GTO2/
+arrows_gto_svg/
+thumbnails/
+
+assets/*.jpg

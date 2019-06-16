@@ -1,0 +1,205 @@
+/*
+Theme name: GTO Agency
+Description: szablon GTO
+Version: 1.2
+Author: Krzysztof Hankiewicz @kjhank
+Author URI: http://kjhank.pl
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/*end of reset*/
+
+.thikk {
+	font-weight: 700;
+}
+
+.single-header, .main-content {
+	width: 90%;
+    margin: auto;
+}
+
+body {
+  font-family: "Open Sans", Tahoma, Arial, sans-serif;
+  background: #fff;
+  font-size: 16px;
+}
+
+video {max-width: 100%;}
+
+.main-thumbnails {
+  margin-top: -2px;
+  width: 100vw;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.main-thumbnails>.creation-thumbnail {
+  width: 33.33%;
+  height: 33.33vw;
+}
+
+.creation-poster {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: block;
+}
+
+.creation-poster>img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.creation-poster>div {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  background: rgba(255, 255, 255, .9);
+  height: 100%;
+  opacity: 0;
+  transition: opacity .2s ease-in;
+  z-index: 3;
+}
+
+.creation-poster:hover div {
+  opacity: 1;
+}
+
+.creation-poster>div>h2 {
+  padding-top: 45%;
+}
+
+h2, h3 {
+  width: 100%;
+}
+
+.client-name {
+  font-size: 1rem;
+  color: #4e4e4e;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.creation-subtitle {
+  background-image: linear-gradient(to right, #9f216b, #F77147);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-size: 2.25rem;
+  line-height: 1.25;
+}
+
+.single-header {
+	margin-bottom: .75rem;
+}
+
+.main-content>img, .main-content>.wp-video {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 2rem;
+}
+
+.post-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.post-nav>a>img {
+	display: block;
+	width: 1.5vw;
+	height: auto;
+}
+
+
+.single-footer {
+	font-size: .875rem;
+	text-align: center;
+	width: 100%;
+	color: #8c8c8c;
+	margin: 4rem auto 2rem;
+}
+
+@media (min-device-width: 320px) and (max-device-width: 480px) {
+	.main-thumbnails>.creation-thumbnail {
+		width: 100vw;
+		height: 100vw;
+	}
+
+	.creation-poster>div>h2 {
+		padding-top: 35%;
+	}
+
+	.client-name {
+		font-size: 2.25rem;
+	}
+
+	.creation-subtitle {
+		font-size: 3rem;
+	}
+
+	.post-nav>a>img {
+		width: 10vw;
+	}
+
+	.single-footer {
+		font-size: .75rem;
+	}
+}
